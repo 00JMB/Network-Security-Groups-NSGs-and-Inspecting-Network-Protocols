@@ -76,7 +76,7 @@ This allows real-time network traffic capture.
    
 ![image](https://github.com/user-attachments/assets/7725dd82-9eaa-4d1e-b173-afdcc992e723)
 
-2. Go into NSG settings and create an **NSG Inbound Rule**:
+2. Go into Network settings and create an **NSG (Network Security Group) Inbound Rule**:
 
 ![image](https://github.com/user-attachments/assets/139c3fa7-f7f4-44c0-8801-d5b1b4a57503)
 
