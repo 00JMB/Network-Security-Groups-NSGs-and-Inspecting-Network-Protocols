@@ -55,6 +55,9 @@ This allows real-time network traffic capture.
 ![image](https://github.com/user-attachments/assets/77d76eca-355a-4f24-bedb-056a71ff3eea)
 
 3. Open **PowerShell** and ping the Ubuntu server.
+```powershell
+   ping <private-IP-address>
+   ```
 
 ![ICMP Traffic](https://github.com/user-attachments/assets/05884ca3-b1ad-4c59-8122-31f757c0be53)
 
