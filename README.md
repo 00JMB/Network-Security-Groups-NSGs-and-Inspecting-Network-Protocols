@@ -80,9 +80,9 @@ This allows real-time network traffic capture.
 
 ![image](https://github.com/user-attachments/assets/139c3fa7-f7f4-44c0-8801-d5b1b4a57503)
 
-   - **Protocol:** ICMPv4
-   - **Action:** Deny
-   - **Priority:** 290
+   - **Protocol:** ICMPv4 (because that is the protocol that Ping uses)
+   - **Action:** Deny (to deny any incoming traffic)
+   - **Priority:** 290 (so it becomes highest priority on the list)
 
 ![NSG Rule](https://github.com/user-attachments/assets/bbe03e9e-5a3c-4f15-9984-73e4e086296f)
 
@@ -90,7 +90,11 @@ This allows real-time network traffic capture.
 
 ![image](https://github.com/user-attachments/assets/92150cec-06d5-495a-ad50-4ec597784d65)
    
-4. **Remove the NSG rule** and confirm the pings are going through again.
+4. **Remove the NSG rule** 
+
+![image](https://github.com/user-attachments/assets/8e70446a-e2ba-47f1-a015-4845627fe74f)
+
+5. **Confirm the pings are going through again.**
 
 ![image](https://github.com/user-attachments/assets/5559ce10-66a8-4b1d-9503-3320a11f73ad)
 
