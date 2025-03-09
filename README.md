@@ -47,12 +47,18 @@ This allows real-time network traffic capture.
 ## Observing ICMP Traffic
 ### Filtering ICMP Traffic
 1. Open **Wireshark** and filter for `icmp` packets.
+
+![image](https://github.com/user-attachments/assets/616e08dc-bf45-4dbf-859e-a74dffa71c7c)
+
 2. Retrieve your **Ubuntu Server's private IP address** from network settings.
+
+![image](https://github.com/user-attachments/assets/77d76eca-355a-4f24-bedb-056a71ff3eea)
+
 3. Open **PowerShell** and ping the Ubuntu server.
 
 ![ICMP Traffic](https://github.com/user-attachments/assets/05884ca3-b1ad-4c59-8122-31f757c0be53)
 
-**Insight:** A successful ping confirms network connectivity between devices.
+**Note:** A successful ping confirms network connectivity between devices.
 
 ---
 
@@ -62,14 +68,20 @@ This allows real-time network traffic capture.
    ```powershell
    ping <private-IP-address> -t
    ```
-2. Create an **NSG Inbound Rule**:
+   
+![image](https://github.com/user-attachments/assets/7725dd82-9eaa-4d1e-b173-afdcc992e723)
+
+2. Go into NSG settings and create an **NSG Inbound Rule**:
+
+![image](https://github.com/user-attachments/assets/139c3fa7-f7f4-44c0-8801-d5b1b4a57503)
+
    - **Protocol:** ICMPv4
    - **Action:** Deny
    - **Priority:** 290
 
 ![NSG Rule](https://github.com/user-attachments/assets/bbe03e9e-5a3c-4f15-9984-73e4e086296f)
 
-3. Observe **"Request timed out"** messages, confirming traffic is blocked.
+3. Observe **"Request timed out"** messages, confirming traffic is blocked, and the firewall is active.
 
 ![image](https://github.com/user-attachments/assets/92150cec-06d5-495a-ad50-4ec597784d65)
    
@@ -77,7 +89,11 @@ This allows real-time network traffic capture.
 
 ![image](https://github.com/user-attachments/assets/5559ce10-66a8-4b1d-9503-3320a11f73ad)
 
-5. Now lets **stop** the ping: **Cntrl + C**
+5. Now lets **stop** the ping:
+Powershell
+```
+Cntrl+C
+```
 
 ---
 
