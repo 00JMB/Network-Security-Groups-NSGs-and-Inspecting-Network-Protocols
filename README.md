@@ -92,7 +92,10 @@ This allows real-time network traffic capture.
 
 ![SSH Traffic](https://github.com/user-attachments/assets/84bf3764-8e78-427d-a118-b232431d2852)
 
-4. You've sucessfully established a connection between the two Virtual machines using SSH. From here, everything you do through the connection will be shown as encrypted packets in Wireshark until you disconnect: ***(exit > Enter within PowerShell)**
+4. You've sucessfully established a connection between the two Virtual machines using SSH. From here, everything you do through the connection will be shown as encrypted packets in Wireshark until you disconnect within powershell by running the command:
+```powershell
+   exit
+   ```
 
 ---
 
