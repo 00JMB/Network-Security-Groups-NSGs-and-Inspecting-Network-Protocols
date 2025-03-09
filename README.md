@@ -18,7 +18,7 @@ In this tutorial, we analyze network traffic between **Azure Virtual Machines** 
 
 ## Operating Systems Used
 - **Windows 10 (21H2)**
-- **Ubuntu Server 20.04**
+- **Ubuntu Server 20.04 (Linux)**
 
 ---
 
@@ -59,6 +59,8 @@ This allows real-time network traffic capture.
 ![ICMP Traffic](https://github.com/user-attachments/assets/05884ca3-b1ad-4c59-8122-31f757c0be53)
 
 **Note:** A successful ping confirms network connectivity between devices.
+
+*Both devices are online so when the Ping was sent out by our Windows VM (Source), a Ping is returned by the Linux VM (Destination)*
 
 ---
 
